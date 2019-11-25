@@ -1483,3 +1483,8 @@ color: #797272;
     font-weight: 600;
     
 }
+@media(max-width:768px){
+    #countdown{
+        margin: 0px 0px!important;
+    }
+}
