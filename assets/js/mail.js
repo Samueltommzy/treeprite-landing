@@ -54,7 +54,6 @@
 
 function thefunc() {
 	const email=document.getElementById('mc-email').value; 
-	// console.log(JSON.stringify({ email: email }))
 	fetch('https://api-treeprite.herokuapp.com/email', {
 		method: 'post',
 		body: JSON.stringify({email: email }),
@@ -75,9 +74,42 @@ function thefunc() {
 		}
 		alert("Thank you,we will be in touch");
 	})
-
 }
-
 const mybutton = document.getElementById('mybutton')
 mybutton.addEventListener('click',thefunc);
+
+function forcontact(event) {
+	event.preventDefault();
+	const cname=document.getElementById('name').value;
+	const cemail=document.getElementById('email').value;
+	const ccompany=document.getElementById('company').value;
+	const cmessage=document.getElementById('message').value;
+	console.log(JSON.stringify({
+		name: cname,
+		email: cemail,
+		company: ccompany,
+		message: cmessage,
+	}))
+	fetch('https://api-treeprite.herokuapp.com/contact',{
+	method:"post",
+	body:JSON.stringify({
+		name:cname,
+		email:cemail,
+		company:ccompany,
+		message:cmessage,
+	}),
+	headers:{
+		"content-type":"application/json"
+	}
+}).then((data)=>{
+	if (data.status==400){
+		alert('message could not be sent');
+	}
+	else if (data.status==200){
+		alert('your message has been recieved')
+	}
+})
+}
+const contactmessage = document.getElementById('sendMessage')
+contactmessage.addEventListener('click', forcontact)
 

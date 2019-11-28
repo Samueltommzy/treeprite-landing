@@ -4,12 +4,12 @@
     <title>Comeout - Creative Coming Soon Template</title>
 
     <meta charset="UTF-8">
-    <meta name="description" content="creative coming soon template">
-    <meta name="keywords" content="coming soon, creative coming soon">
-    <meta name="author" content="Skillteam">
+    <meta name="description" content="treeprite">
+    <meta name="keywords" content="treeprite">
+    <meta name="author" content="emmanuel lucky">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+    <link rel="icon" type="image/png" href="assets/images/TREEPRITE_ICON.svg" />
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
@@ -53,8 +53,8 @@
                         <a href="#home" class="logo nav home">
                             <!--<img src="assets/images/logo.png" alt="Skillteam - Coming Soon Template">-->
                             <!-- <p class="logo">Come<span>out</span></p>Change logo text -->
-                            <img src="assets/images/TR_L1.svg" alt="treeprite text logo" class="treeprite-text-icon">
-                            <img src="assets/images/TREEPRITE_ICON.svg" alt="treeprite text logo" class="treeprite-icon">
+                            <a href="#home" class="nav home"><img src="assets/images/TR_L1.svg" alt="treeprite text logo" class="treeprite-text-icon"></a>
+                            <a href="#home" class="nav home"><img src="assets/images/TREEPRITE_ICON.svg" alt="treeprite text logo" class="treeprite-icon"></a>
 
                         </a>
                     </div> <!-- end col-sm-6 -->
@@ -62,10 +62,10 @@
                     <!-- Menu -->
                     <div class="col-md-6 text-right hidden-xs hidden-sm">
                         <ul class="menu">
-                            <li><a href="#home" class="nav home">Home</a></li>
-                            <li><a href="#about" class="nav left">About us</a></li>
+                            <li><a href="#home" class="nav home hero" >Home</a></li>
+                            <li><a href="#about" class="nav left hero">About us</a></li>
                             <!-- <li><a href="#portfolio" class="nav right">Portfolio</a></li> -->
-                            <li><a href="#contact" class="nav left">Contact</a></li>
+                            <li><a href="#contact" class="nav left hero">Contact</a></li>
                         </ul>
                     </div> <!-- end col-sm-6 -->
                     <!-- / Menu -->
@@ -92,12 +92,12 @@
                               <span></span>
                           </div>
                       </div>
-                      <div class="mobile_menu">
+                      <div class="mobile_menu" style="color: white;">
                         <ul>
-                            <li><a href="#home" class="nav home">Home</a></li>
-                            <li><a href="#about" class="nav left_m">About us</a></li>
+                            <li><a href="#home" class="nav home" style="color: white;font-size: 20px;">Home</a></li>
+                            <li><a href="#about" class="nav left_m" style="color: white;font-size: 20px;">About us</a></li>
                             <!-- <li><a href="#portfolio" class="nav right_m">Portfolio</a></li> -->
-                            <li><a href="#contact" class="nav left_m">Contact</a></li>
+                            <li><a href="#contact" class="nav left_m" style="color: white;font-size: 20px;">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -107,7 +107,6 @@
         </div> <!-- end container -->
     </header>
     <!-- / Header -->
-
     <!-- Overlay - Bg -->
     <div class="overlay">
         <div class="overlay-wrapper">
@@ -126,7 +125,7 @@
 
                     <div id="home">
                         <div class="headline square">
-                            <h1 class="wow fadeIn">
+                            <h1 class="wow fadeIn spacer">
                                 WE ARE LAUNCHING IN
                                 
                             </h1><!-- change text -->
@@ -181,7 +180,7 @@
 
 
                     <!-- About -->
-                    <div id="about" class="text-left pt" style="">
+                    <div id="about" class="text-left pt">
                         <div class="">
                             <div class="col-md-1"></div>
                             <div class="col-md-3">
@@ -229,7 +228,7 @@
                                                     Africa.</p>
                                                 </div><!-- end col-md-6 -->
                                                 <div class="col-md-6 box_two">
-                                                    <img src="assets/images/globe.png" alt="">
+                                                    <img src="assets/images/globe.png" alt="message icon">
                                                     <h3 class="our-mission">Our Mission</h3>
                                                     <hr class="xs colorgreen">
                                                     <p class="subhead fregular">Mission: to build tech solutions which are accessible and easy to use with hassle-free ticketing, payment and
@@ -257,7 +256,7 @@
                                         <h1>Contact <span>Us</span></h1>
                                     </div>
 
-                                    <hr class="xs up">
+                                    <hr class="xs">
 
                                     <div class="contact_table">
                                         <div class="contact_row wow slideInLeft">
@@ -280,7 +279,7 @@
                                                 <img src="assets/images/c_envelope.png" alt="contact">
                                             </div>
                                             <div class="contact_cell visible-xs visible-sm hidden-md hidden-lg">
-                                                <img src="assets/images/c_envelope_w.png" alt="contact">
+                                                <img src="assets/images/white-envelope-icon-envelope-icon-white-11553434182gxk4hmpqdw.png" alt="contact">
                                             </div>
                                             <div class="contact_cell">
                                                 <div class="contact_content">
@@ -311,7 +310,7 @@
                                     <div class="col-md-7">
                                         <div class="row boxs wow fadeIn"  data-wow-delay="1s">
                                             <div class="col-sm-12">
-                                                <form id="ajax-contact" method="post" action="assets/scripts/mailer.php">
+                                                <form id="ajax-contact" method="post" >
                                                     <div class="form-group">
                                                         <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" data-error="Please type your name!!!" required>
                                                         <div class="help-block with-errors"></div>
@@ -334,7 +333,7 @@
 
                                                     <div id="form-messages"></div>
 
-                                                    <button type="submit" class="btn btn-transparent">Send</button>
+                                                    <button type="submit" class="btn btn-transparent" id="sendMessage">Send</button>
                                                 </form><!-- end form -->
                                             </div>
                                         </div>
